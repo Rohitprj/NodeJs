@@ -1,34 +1,36 @@
-const obj = [
-  {
-    fname: "Vijay",
-    lname: "kumar",
-    age: 25,
-  },
-  {
-    fname: "AJay",
-    lname: "kumar",
-    age: 28,
-  },
-];
 
-function converter(raw) {
-  // raw[fullname] = raw[fname]
-  // delete raw[fname]
-  const a = raw[0].fname + raw[1].fname;
-  console.log(a);
-}
+console.log("hello")
+// const obj = [
+//   {
+//     fname: "Vijay",
+//     lname: "kumar",
+//     age: 25,
+//   },
+//   {
+//     fname: "AJay",
+//     lname: "kumar",
+//     age: 28,
+//   },
+// ];
 
-const data = converter(obj);
+// function converter(raw) {
+//   // raw[fullname] = raw[fname]
+//   // delete raw[fname]
+//   const a = raw[0].fname + raw[1].fname;
+//   console.log(a);
+// }
 
-// Output
+// const data = converter(obj);
 
-[
-  {
-    fullname: "vijay kumar",
-    yob: 1998,
-  },
-  {
-    fullname: "Ajay kumar",
-    yob: 1998,
-  },
-];
+// // Output
+
+// [
+//   {
+//     fullname: "vijay kumar",
+//     yob: 1998,
+//   },
+//   {
+//     fullname: "Ajay kumar",
+//     yob: 1998,
+//   },
+// ];
