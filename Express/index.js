@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 
 const app = express();
+const PORT = 3000;
 app.use(express.json());
 app.use(morgan());
 const data = [];
@@ -39,4 +40,6 @@ app.post("/login", (req, res) => {
     res.json({ message: "login failed" });
   }
 });
-app.listen(3000);
+app.listen(PORT, () => {
+  console.log("server is running on port :", PORT);
+});
