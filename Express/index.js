@@ -21,22 +21,22 @@ app.get("/demo/:name", (req, res) => {
 //   res.end("hello this is my post request ");
 // });
 
-// app.post("/register", (req, res) => {
-//   const { userName, password } = req.body;
-//   data.push({ userName, password });
-//   res.end("hello this is my register request ");
-//   console.log(data);
-// });
+app.post("/register", (req, res) => {
+  const { userName, password } = req.body;
+  data.push({ userName, password });
+  res.end("hello this is my register request ");
+  console.log(data);
+});
 
-// app.post("/login", (req, res) => {
-//   const { userName, password } = req.body;
-//   const user = data.find(
-//     (user) => user.userName === userName && user.password === password
-//   );
-//   if (user) {
-//     res.json({ message: "login success" });
-//   } else {
-//     res.json({ message: "login failed" });
-//   }
-// });
+app.post("/login", (req, res) => {
+  const { userName, password } = req.body;
+  const user = data.find(
+    (user) => user.userName === userName && user.password === password
+  );
+  if (user) {
+    res.json({ message: "login success" });
+  } else {
+    res.json({ message: "login failed" });
+  }
+});
 app.listen(3000);
