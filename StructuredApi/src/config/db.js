@@ -1,9 +1,12 @@
 const { MongoClient } = require("mongodb");
 
-const clients = new MongoClient("mongodb://127.0.0.1:27017/School", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const clients = new MongoClient("mongodb://127.0.0.1:27017/School");
+
+// Older method ------------
+// const clients = new MongoClient("mongodb://127.0.0.1:27017/School", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 async function connectDB() {
   try {
