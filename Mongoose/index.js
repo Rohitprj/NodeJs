@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const express = require("express");
 const mongooseRoutes = require("./src/routes/mongooseRoutes");
 const { mongooseFun } = require("./src/config/db");

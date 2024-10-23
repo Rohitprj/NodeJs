@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT = 3005;
 
 connectDB();
-app.use("products", getRoutes);
+app.use("/", getRoutes);
 app.listen(PORT, () => {
   console.log("server", PORT);
 });
