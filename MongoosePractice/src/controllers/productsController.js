@@ -14,6 +14,11 @@ const User = require("../models/productsModel");
 async function getProducts(req, res) {
   try {
     const products = await User.find();
+    // const products = await User({
+    //   name: "John",
+    //   email: "john@gmail.com",
+    //   product_name: "adasd",
+    // }).save();
     console.log("Query successful", products);
     res.json(products);
     res.end();
