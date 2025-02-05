@@ -1,5 +1,5 @@
-const Login = require("../models/mongoModules");
 const Register = require("../models/mongoModules");
+const Login = require("../models/mongoModules");
 
 async function loginAuth(req, res) {
   try {
